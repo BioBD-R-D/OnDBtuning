@@ -6,15 +6,15 @@ Para acessar o vídeo de defesa da Dissertação [clique aqui](video/defesa.mp4)
 
 Os scripts estão organizados da seguinte forma com a ontologia OnDBTuning:
 
-- OnDBTuning_semRegras.rdf => sem as regras criadas para índices, visões materializadas, decomposição SQL, cálculo de bônus e utilidade;
+- OnDBTuning_sem_regra_e_sem_carga.rdf => sem as regras criadas para índices, visões materializadas, decomposição SQL, cálculo de bônus e utilidade;
 
-- OnDBTuning_comRegras.rdf => com as regras de decomposição SQL, cálculo de bônus e utilidade e com as seguintes regras para índices e visões materializadas:
+- OnDBTuning_com_regra_e_sem_carga.rdf => com as regras de decomposição SQL, cálculo de bônus e utilidade e com as seguintes regras para índices e visões materializadas:
     - tuning:RuleHypSimpleIndex, 
     - tuning:RuleHypCompositeIndex,
     - tuning:RuleSimplePartialIndex e 
     - tuning:RuleHypViewAdapted.
 
-- OnDBTuning_comcarga_e_regra.rdf = > com as regras criadas (citadas no item anterior) e com algumas instâncias da carga do benchmarch TPC-H (www.tpc.org/tpch/). Sugestões de índice hipotéticos, índices parciais e visões materializadas, cálculo de utilidade e bônus, decomposição SQL foram inferidas com a carga de trabalho do TPC-H e persistidas nessa versão da OnDBTuning. E uma segunda carga de trabalho composta
+- OnDBTuning_com_regra_carga1_inferencia_e_carga2.rdf = > com as regras criadas (citadas no item anterior) e com algumas instâncias da carga do benchmarch TPC-H (www.tpc.org/tpch/). Sugestões de índice hipotéticos, índices parciais e visões materializadas, cálculo de utilidade e bônus, decomposição SQL foram inferidas com a carga de trabalho do TPC-H e persistidas nessa versão da OnDBTuning. E uma segunda carga de trabalho composta
 pela consulta Q3 do TPC-H foi instanciada na OnDBTuning, conforme descrita no documento de dissertação no último parágrafo do item 4.4, porém precisa ser executada para visualizar a inferência desses resultados.
 
 Para mapeamento de carga de dados RDF de entrada na OnDBTuning ![clique aqui](pages/MapeamentoDadosEntrada.md)
