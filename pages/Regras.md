@@ -9,10 +9,14 @@ As 6 (seis) *spin:rules*, podem ser encontradas no seguinte caminho na OnDBTunin
 
 <img src="../image/caminhoRegra.PNG">
 
+Segue um fragmento da OnDBtuning, onde o que está destacado em amarelo, são as partes que são identificadas na decomposição SQL, com exceção do DML Statement:
 
-São elas:
+<img src="../image/fragmentoOnDBTuning.PNG">
 
-**QueryStatment**
+
+As regras de decomposição SQL são:
+
+**QueryStatement**
 
 <img src="../image/querystatment.PNG">
 
